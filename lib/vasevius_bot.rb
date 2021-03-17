@@ -1,0 +1,13 @@
+require 'dotenv'
+require 'rest-client'
+require 'active_support/core_ext/hash/keys'
+require 'active_support/core_ext/object/blank'
+require 'active_support/core_ext/class/subclasses'
+require 'active_support/core_ext/numeric/time'
+require 'json'
+require 'telegram/bot'
+require 'require_all'
+
+Dotenv.load
+
+require_all 'lib/**/*.rb'
